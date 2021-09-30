@@ -1,0 +1,1131 @@
+{
+    "_id": {
+        "$oid": "60bb831a5615e67c688a2446"
+    },
+    "rules": [
+        {
+            "name": "Start rule",
+            "lhs": {
+                "nodes": [
+                    {
+                        "label": "Start",
+                        "abbrev": "S",
+                        "id": "c26e1356-d64c-4c43-be9c-687f8c1a8555",
+                        "mark": "1"
+                    }
+                ],
+                "edges": []
+            },
+            "rhs": [
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "Entrance",
+                                "abbrev": "e",
+                                "id": "cda054a3-c6af-49de-acd0-663ad80ad3ad",
+                                "mark": "1"
+                            },
+                            {
+                                "label": "Chain",
+                                "abbrev": "C",
+                                "id": "7a5841a8-9d1b-4ad1-86a9-23e4dc7c4a06",
+                                "mark": "2"
+                            },
+                            {
+                                "label": "Gate",
+                                "abbrev": "G",
+                                "id": "a0cf6158-0c42-45c8-a7b4-e9856ab80ae8",
+                                "mark": "3"
+                            },
+                            {
+                                "label": "Boss (mini)",
+                                "abbrev": "bm",
+                                "id": "65863d16-99ee-4ff8-b180-cd8ac08babaf",
+                                "mark" : "4"
+                            },
+                            {
+                                "label": "item (quest)",
+                                "abbrev": "iq",
+                                "id": "6c331a07-b256-4350-bd9e-081b00e58084",
+                                "mark" : "5"
+                            },
+                            {
+                                "label": "test (item)",
+                                "abbrev": "ti",
+                                "id": "4b945e23-0988-445e-9ac6-3c2919ed3b13",
+                                "mark" : "6"
+                            },
+                            {
+                                "label": "Chain (Final)",
+                                "abbrev": "CF",
+                                "id": "3941be88-baac-40cf-8d23-169379d6cfaf",
+                                "mark" : "7"
+                            },
+                            {
+                                "label": "goal",
+                                "abbrev": "g",
+                                "id": "c0ed422c-ad38-456f-9a64-916f92fe401e",
+                                "mark" : "8"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "cda054a3-c6af-49de-acd0-663ad80ad3ad",
+                                "to": "7a5841a8-9d1b-4ad1-86a9-23e4dc7c4a06",
+                                "id": "48ffe1d9-5dea-4d8c-97fb-2a18d2eff19e"
+                            },
+                            {
+                                "from": "7a5841a8-9d1b-4ad1-86a9-23e4dc7c4a06",
+                                "to": "a0cf6158-0c42-45c8-a7b4-e9856ab80ae8",
+                                "id": "73dbbf97-57c8-431f-ab95-54a859808cea"
+                            },
+                            {
+                                "from": "a0cf6158-0c42-45c8-a7b4-e9856ab80ae8",
+                                "to": "65863d16-99ee-4ff8-b180-cd8ac08babaf",
+                                "id": "2a220fc0-6f40-4660-97a1-d655e771e0d0"
+                            },
+                            {
+                                "from": "65863d16-99ee-4ff8-b180-cd8ac08babaf",
+                                "to": "6c331a07-b256-4350-bd9e-081b00e58084",
+                                "id": "d78fb78c-ca3c-43e0-8c3b-22c9d5d82312"
+                            },
+                            {
+                                "from": "6c331a07-b256-4350-bd9e-081b00e58084",
+                                "to": "4b945e23-0988-445e-9ac6-3c2919ed3b13",
+                                "id": "4fefd711-3758-4288-9fd1-c545b6fe8573"
+                            },
+                            {
+                                "from": "4b945e23-0988-445e-9ac6-3c2919ed3b13",
+                                "to": "3941be88-baac-40cf-8d23-169379d6cfaf",
+                                "id": "32333f41-aa74-45a0-878a-2bee3802c28d"
+                            },
+                            {
+                                "from": "3941be88-baac-40cf-8d23-169379d6cfaf",
+                                "to": "c0ed422c-ad38-456f-9a64-916f92fe401e",
+                                "id": "910c6deb-3260-4b32-983a-c9724037a681"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Create Parallel Chain",
+            "lhs": {
+                "nodes": [
+                    {
+                        "label": "Chain",
+                        "abbrev": "C",
+                        "id": "6a3cc17c-f46a-4716-863a-ef6175b2f50f",
+                        "mark" : "1"
+                    },
+                    {
+                        "label": "Gate",
+                        "abbrev": "G",
+                        "id": "2217faf4-ba5c-46d1-af0d-49fbb4c61009",
+                        "mark" : "2"
+                    }
+                ],
+                "edges": [
+                    {
+                        "from": "6a3cc17c-f46a-4716-863a-ef6175b2f50f",
+                        "to": "2217faf4-ba5c-46d1-af0d-49fbb4c61009",
+                        "id": "bf093ed7-26dd-4d3b-ac21-b1a2f642d36c"
+                    }
+                ]
+            },
+            "rhs": [
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "Chain (Parallel)",
+                                "abbrev": "CP",
+                                "id": "0ad5c49c-d6e7-4267-9cff-501e383cb8d0",
+                                "mark" : "1"
+                            },
+                            {
+                                "label": "Gate",
+                                "abbrev": "G",
+                                "id": "8e4af1a0-41a2-4c02-b9e3-7c4c90539093",
+                                "mark" : "2"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "0ad5c49c-d6e7-4267-9cff-501e383cb8d0",
+                                "to": "8e4af1a0-41a2-4c02-b9e3-7c4c90539093",
+                                "id": "7119ca19-66c4-4792-8ea3-6171df221845"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "Chain (Linear)",
+                                "abbrev": "CL",
+                                "id": "dc07c6cb-1d62-4aed-b9b3-5dc7303fde60",
+                                "mark" : "1"
+                            },
+                            {
+                                "label": "Chain (Linear)",
+                                "abbrev": "CL",
+                                "id": "31dd1e2c-3dd3-4b5f-b5f7-4821604bce34",
+                                "mark" : "2"
+                            },
+                            {
+                                "label": "Chain (Linear)",
+                                "abbrev": "CL",
+                                "id": "b18a6ab3-3642-4d7f-81e6-3187d29a793a",
+                                "mark" : "3"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "dc07c6cb-1d62-4aed-b9b3-5dc7303fde60",
+                                "to": "31dd1e2c-3dd3-4b5f-b5f7-4821604bce34",
+                                "id": "c1a43850-ff94-4fbd-b09b-1dbbfed08f95"
+                            },
+                            {
+                                "from": "31dd1e2c-3dd3-4b5f-b5f7-4821604bce34",
+                                "to": "b18a6ab3-3642-4d7f-81e6-3187d29a793a",
+                                "id": "8a207d73-b7ce-4aaf-a6cd-2e3d7fab639d"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "Chain (Linear)",
+                                "abbrev": "CL",
+                                "id": "52f47458-22fe-4698-b842-5c0eca7d1220",
+                                "mark" : "1"
+                            },
+                            {
+                                "label": "Chain (Linear)",
+                                "abbrev": "CL",
+                                "id": "7c06c6e4-f8f1-4925-8233-af8b4538e157",
+                                "mark" : "2"
+                            },
+                            {
+                                "label": "Chain (Linear)",
+                                "abbrev": "CL",
+                                "id": "8d6dc842-d261-40ba-9cf0-889b98667199",
+                                "mark" : "3"
+                            },
+                            {
+                                "label": "Chain (Linear)",
+                                "abbrev": "CL",
+                                "id": "8c05224e-7db8-4134-b762-a72d09efd2c2",
+                                "mark" : "4"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "52f47458-22fe-4698-b842-5c0eca7d1220",
+                                "to": "7c06c6e4-f8f1-4925-8233-af8b4538e157",
+                                "id": "3787d885-d181-477b-afa5-6638efc5b583"
+                            },
+                            {
+                                "from": "7c06c6e4-f8f1-4925-8233-af8b4538e157",
+                                "to": "8d6dc842-d261-40ba-9cf0-889b98667199",
+                                "id": "ae482500-832f-4e85-aaef-12430e10b8bd"
+                            },
+                            {
+                                "from": "8d6dc842-d261-40ba-9cf0-889b98667199",
+                                "to": "8c05224e-7db8-4134-b762-a72d09efd2c2",
+                                "id": "d706dcdc-786e-4667-816c-c2a1fd86f5b3"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "Chain (Linear)",
+                                "abbrev": "CL",
+                                "id": "12b19131-bfa5-4edd-9d43-0e76bb1453ed",
+                                "mark" : "1"
+                            },
+                            {
+                                "label": "Chain (Linear)",
+                                "abbrev": "CL",
+                                "id": "25e05770-4940-4a86-8c13-39c81cc8a08b",
+                                "mark" : "2"
+                            },
+                            {
+                                "label": "Chain (Linear)",
+                                "abbrev": "CL",
+                                "id": "2f38ee7d-687b-49d1-99a8-3f81982762a0",
+                                "mark" : "3"
+                            },
+                            {
+                                "label": "Chain (Linear)",
+                                "abbrev": "CL",
+                                "id": "348326b8-467f-491d-9e49-1a3291621897",
+                                "mark" : "4"
+                            },
+                            {
+                                "label": "Chain (Linear)",
+                                "abbrev": "CL",
+                                "id": "ed9feb1b-2a47-47f9-bada-5f808a503ee5",
+                                "mark" : "5"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "12b19131-bfa5-4edd-9d43-0e76bb1453ed",
+                                "to": "25e05770-4940-4a86-8c13-39c81cc8a08b",
+                                "id": "238c5448-86bc-4b83-9509-5ef9dedd7fcd"
+                            },
+                            {
+                                "from": "25e05770-4940-4a86-8c13-39c81cc8a08b",
+                                "to": "2f38ee7d-687b-49d1-99a8-3f81982762a0",
+                                "id": "87fb953c-06e5-48da-92bd-85c612ab7cab"
+                            },
+                            {
+                                "from": "2f38ee7d-687b-49d1-99a8-3f81982762a0",
+                                "to": "348326b8-467f-491d-9e49-1a3291621897",
+                                "id": "f46fba0b-cc1c-4306-87b6-a3944dd8dc9d"
+                            },
+                            {
+                                "from": "348326b8-467f-491d-9e49-1a3291621897",
+                                "to": "ed9feb1b-2a47-47f9-bada-5f808a503ee5",
+                                "id": "381ae586-b648-49d1-b5b7-217c2fe30aef"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Parallel 1",
+            "lhs": {
+                "nodes": [
+                    {
+                        "label": "Chain (Parallel)",
+                        "abbrev": "CP",
+                        "id": "b7164206-3f13-4584-a5a0-3f728c5dd548",
+                        "mark" : "1"
+                    },
+                    {
+                        "label": "Gate",
+                        "abbrev": "G",
+                        "id": "cb6b1653-3207-4b52-82d7-469924c5d8a1",
+                        "mark" : "2"
+                    }
+                ],
+                "edges": [
+                    {
+                        "from": "b7164206-3f13-4584-a5a0-3f728c5dd548",
+                        "to": "cb6b1653-3207-4b52-82d7-469924c5d8a1",
+                        "id": "cd8561be-655f-4823-a238-948d7120f20c"
+                    }
+                ]
+            },
+            "rhs": [
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "Fork",
+                                "abbrev": "F",
+                                "id": "1a99a431-26bc-4060-a35c-da3aee6ae590",
+                                "mark" : "1"
+                            },
+                            {
+                                "label": "key (multi piece)",
+                                "abbrev": "km",
+                                "id": "425ba8aa-93bb-47f6-aedb-e5ba2827c147",
+                                "mark" : "3"
+                            },
+                            {
+                                "label": "key (multi piece)",
+                                "abbrev": "km",
+                                "id": "4cdbad7c-2501-429a-b1a8-702d7986a26d",
+                                "mark" : "4"
+                            },
+                            {
+                                "label": "key (multi piece)",
+                                "abbrev": "km",
+                                "id": "aa06a2b1-26b9-4bfd-83c6-a61a45b40955",
+                                "mark" : "5"
+                            },
+                            {
+                                "label": "lock (multi)",
+                                "abbrev": "lm",
+                                "id": "5cf5b74b-0db2-47de-a3b6-2b1fa9f24554",
+                                "mark" : "2"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "1a99a431-26bc-4060-a35c-da3aee6ae590",
+                                "to": "425ba8aa-93bb-47f6-aedb-e5ba2827c147",
+                                "id": "3144d1b6-f4d6-45cd-b916-8f43b62a214b"
+                            },
+                            {
+                                "from": "1a99a431-26bc-4060-a35c-da3aee6ae590",
+                                "to": "4cdbad7c-2501-429a-b1a8-702d7986a26d",
+                                "id": "ee1c13e7-6048-4f97-91b7-3011603795db"
+                            },
+                            {
+                                "from": "1a99a431-26bc-4060-a35c-da3aee6ae590",
+                                "to": "aa06a2b1-26b9-4bfd-83c6-a61a45b40955",
+                                "id": "cc40a577-841c-4cc6-b32f-b3bb69917294"
+                            },
+                            {
+                                "from": "425ba8aa-93bb-47f6-aedb-e5ba2827c147",
+                                "to": "5cf5b74b-0db2-47de-a3b6-2b1fa9f24554",
+                                "id": "ac9544c2-990c-4c74-80b2-ffad19cc5db0"
+                            },
+                            {
+                                "from": "4cdbad7c-2501-429a-b1a8-702d7986a26d",
+                                "to": "5cf5b74b-0db2-47de-a3b6-2b1fa9f24554",
+                                "id": "cda141cf-bd26-4aaa-ba14-ec25cb9d732f"
+                            },
+                            {
+                                "from": "aa06a2b1-26b9-4bfd-83c6-a61a45b40955",
+                                "to": "5cf5b74b-0db2-47de-a3b6-2b1fa9f24554",
+                                "id": "3935ca0f-4c66-4a8d-8dc8-83fb04a202ec"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Parallel 2",
+            "lhs": {
+                "nodes": [
+                    {
+                        "label": "Fork",
+                        "abbrev": "F",
+                        "id": "095724e9-8411-471a-87b6-14b3e7d45028",
+                        "mark" : "1"
+                    },
+                    {
+                        "label": "key (multi piece)",
+                        "abbrev": "km",
+                        "id": "b10a2c52-28d5-4509-a7f0-6771d1c8d2d1",
+                        "mark" : "2"
+                    }
+                ],
+                "edges": [
+                    {
+                        "from": "095724e9-8411-471a-87b6-14b3e7d45028",
+                        "to": "b10a2c52-28d5-4509-a7f0-6771d1c8d2d1",
+                        "id": "924d7885-42e3-4e24-883b-4347fb1506b8"
+                    }
+                ]
+            },
+            "rhs": [
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "Fork",
+                                "abbrev": "F",
+                                "id": "0c3f434e-cd2b-4731-9639-a3acf93d01c6",
+                                "mark" : "1"
+                            },
+                            {
+                                "label": "key",
+                                "abbrev": "k",
+                                "id": "378bf9c0-8edb-4755-9f15-32e48ca281a6",
+                                "mark" : "3"
+                            },
+                            {
+                                "label": "lock",
+                                "abbrev": "l",
+                                "id": "be52e649-5336-468e-a2bb-59c76cc7ccfe",
+                                "mark" : "4"
+                            },
+                            {
+                                "label": "key (multi piece)",
+                                "abbrev": "km",
+                                "id": "83106a4b-afe0-4bb5-bb39-d360a7687266",
+                                "mark" : "2"
+                            },
+                            {
+                                "label": "Hook",
+                                "abbrev": "H",
+                                "id": "856fd196-88d5-4bad-8a6f-9e8f72acd672",
+                                "mark" : "5"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "0c3f434e-cd2b-4731-9639-a3acf93d01c6",
+                                "to": "378bf9c0-8edb-4755-9f15-32e48ca281a6",
+                                "id": "703a2ea3-33df-4ef4-bfe6-65cfab70d2a6"
+                            },
+                            {
+                                "from": "378bf9c0-8edb-4755-9f15-32e48ca281a6",
+                                "to": "be52e649-5336-468e-a2bb-59c76cc7ccfe",
+                                "id": "51324d71-424c-4ca5-a872-d362b4fe854e"
+                            },
+                            {
+                                "from": "be52e649-5336-468e-a2bb-59c76cc7ccfe",
+                                "to": "83106a4b-afe0-4bb5-bb39-d360a7687266",
+                                "id": "ddd9fd33-ea02-4986-8429-f1c259225eb3"
+                            },
+                            {
+                                "from": "be52e649-5336-468e-a2bb-59c76cc7ccfe",
+                                "to": "856fd196-88d5-4bad-8a6f-9e8f72acd672",
+                                "id": "1654c264-3ad8-46e2-a452-b0f15cd9b486"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "Fork",
+                                "abbrev": "F",
+                                "id": "095724e9-8411-471a-87b6-14b3e7d45028",
+                                "mark" : "1"
+                            },
+                            {
+                                "label": "test",
+                                "abbrev": "t",
+                                "id": "da11f0e4-2e57-4377-9176-582679e44571",
+                                "mark" : "3"
+                            },
+                            {
+                                "label": "key (multi piece)",
+                                "abbrev": "km",
+                                "id": "b924ab13-250a-493a-b825-20c8af5a2404",
+                                "mark" : "2"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "095724e9-8411-471a-87b6-14b3e7d45028",
+                                "to": "da11f0e4-2e57-4377-9176-582679e44571",
+                                "id": "629cac13-d8b2-40ea-8543-106ec7856718"
+                            },
+                            {
+                                "from": "da11f0e4-2e57-4377-9176-582679e44571",
+                                "to": "b924ab13-250a-493a-b825-20c8af5a2404",
+                                "id": "8405c840-d6e7-4873-ad1c-f1bfb541f44c"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "Fork",
+                                "abbrev": "F",
+                                "id": "095724e9-8411-471a-87b6-14b3e7d45028",
+                                "mark" : "1"
+                            },
+                            {
+                                "label": "test (secret)",
+                                "abbrev": "ts",
+                                "id": "553bb16d-5e4c-434d-ab6b-68f7565f6023",
+                                "mark" : "3"
+                            },
+                            {
+                                "label": "key (multi piece)",
+                                "abbrev": "km",
+                                "id": "7247876c-7b50-4515-a933-b18e69b86ee5",
+                                "mark" : "2"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "095724e9-8411-471a-87b6-14b3e7d45028",
+                                "to": "553bb16d-5e4c-434d-ab6b-68f7565f6023",
+                                "id": "0965a296-159d-4ad6-86fe-ea0acdb417a7"
+                            },
+                            {
+                                "from": "553bb16d-5e4c-434d-ab6b-68f7565f6023",
+                                "to": "7247876c-7b50-4515-a933-b18e69b86ee5",
+                                "id": "f3844053-67f9-46c8-abc7-87559cf26a5d"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Parallel 3",
+            "lhs": {
+                "nodes": [
+                    {
+                        "label": "Fork",
+                        "abbrev": "F",
+                        "id": "c3348de2-d576-420f-8fb3-0436faa85d90",
+                        "mark" : "1"
+                    },
+                    {
+                        "label": "key",
+                        "abbrev": "k",
+                        "id": "4e3f450a-5c76-4b74-a3a3-f129bf32fe7d",
+                        "mark" : "2"
+                    }
+                ],
+                "edges": [
+                    {
+                        "from": "c3348de2-d576-420f-8fb3-0436faa85d90",
+                        "to": "4e3f450a-5c76-4b74-a3a3-f129bf32fe7d",
+                        "id": "ad94c080-b816-43cb-beae-51941706e278"
+                    }
+                ]
+            },
+            "rhs": [
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "Fork",
+                                "abbrev": "F",
+                                "id": "c3348de2-d576-420f-8fb3-0436faa85d90",
+                                "mark" : "1"
+                            },
+                            {
+                                "label": "test",
+                                "abbrev": "t",
+                                "id": "682861f6-d6b4-4e25-a77f-9bf4ab675587",
+                                "mark" : "3"
+                            },
+                            {
+                                "label": "key",
+                                "abbrev": "k",
+                                "id": "4a0caf01-c7ce-44c5-b9df-216a38de7646",
+                                "mark" : "2"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "c3348de2-d576-420f-8fb3-0436faa85d90",
+                                "to": "682861f6-d6b4-4e25-a77f-9bf4ab675587",
+                                "id": "becb065c-c57b-4c93-8d07-92623aa01500"
+                            },
+                            {
+                                "from": "682861f6-d6b4-4e25-a77f-9bf4ab675587",
+                                "to": "4a0caf01-c7ce-44c5-b9df-216a38de7646",
+                                "id": "caf3f0d3-6bb1-4db3-b84d-5ca3fd267e06"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "Fork",
+                                "abbrev": "F",
+                                "id": "c3348de2-d576-420f-8fb3-0436faa85d90",
+                                "mark" : "1"
+                            },
+                            {
+                                "label": "test (secret)",
+                                "abbrev": "ts",
+                                "id": "d222c022-7de2-435d-90ce-5eb0dc7cb5b3",
+                                "mark" : "3"
+                            },
+                            {
+                                "label": "key",
+                                "abbrev": "k",
+                                "id": "5cee1ff1-f2b9-4c71-b751-691b843ca6bd",
+                                "mark" : "2"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "c3348de2-d576-420f-8fb3-0436faa85d90",
+                                "to": "d222c022-7de2-435d-90ce-5eb0dc7cb5b3",
+                                "id": "3252d561-4a99-4a40-9ac7-14ce8b5e3ad8"
+                            },
+                            {
+                                "from": "d222c022-7de2-435d-90ce-5eb0dc7cb5b3",
+                                "to": "5cee1ff1-f2b9-4c71-b751-691b843ca6bd",
+                                "id": "e198cbeb-0ef4-4fd9-8e20-d9c26fd0e079"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Parallel 4",
+            "lhs": {
+                "nodes": [
+                    {
+                        "label": "Fork",
+                        "abbrev": "F",
+                        "id": "66b0d4a1-610f-4019-8038-7c5a9c3ef5f8",
+                        "mark" : "1"
+                    }
+                ],
+                "edges": []
+            },
+            "rhs": [
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "nothing/exploration",
+                                "abbrev": "n",
+                                "id": "64fddb18-67cc-40dc-9141-0df51d964553",
+                                "mark" : "1"
+                            },
+                            {
+                                "label": "Hook",
+                                "abbrev": "H",
+                                "id": "7efb92c5-6858-421f-91b1-ee60ca703920",
+                                "mark" : "2"
+                            },
+                            {
+                                "label": "Hook",
+                                "abbrev": "H",
+                                "id": "8555efab-2015-4bd9-85b3-28c1441bafe3",
+                                "mark" : "3"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "64fddb18-67cc-40dc-9141-0df51d964553",
+                                "to": "7efb92c5-6858-421f-91b1-ee60ca703920",
+                                "id": "7dec3d24-4828-4e82-be24-559c53288ff1"
+                            },
+                            {
+                                "from": "64fddb18-67cc-40dc-9141-0df51d964553",
+                                "to": "8555efab-2015-4bd9-85b3-28c1441bafe3",
+                                "id": "92509701-190b-4b7a-944d-312d3b2c2388"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Create Final Chain",
+            "lhs": {
+                "nodes": [
+                    {
+                        "label": "Chain (Final)",
+                        "abbrev": "CF",
+                        "id": "ced27a87-716b-4937-b32c-d11fe2ec7be6",
+                        "mark" : "1"
+                    },
+                    {
+                        "label": "goal",
+                        "abbrev": "g",
+                        "id": "36405f39-509a-4aa9-aa5a-dda96577b6a1",
+                        "mark" : "2"
+                    }
+                ],
+                "edges": [
+                    {
+                        "from": "ced27a87-716b-4937-b32c-d11fe2ec7be6",
+                        "to": "36405f39-509a-4aa9-aa5a-dda96577b6a1",
+                        "id": "1de4d3a1-5c3c-4dd7-91aa-4c35294a4126"
+                    }
+                ]
+            },
+            "rhs": [
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "Chain",
+                                "abbrev": "C",
+                                "id": "0f3eb50e-dbe4-45ee-aa37-d786ef1b489d",
+                                "mark" : "1"
+                            },
+                            {
+                                "label": "Hook",
+                                "abbrev": "H",
+                                "id": "04a2ca9d-e9bf-425e-bf0c-40ff87bfb7c0",
+                                "mark" : "3"
+                            },
+                            {
+                                "label": "Gate",
+                                "abbrev": "G",
+                                "id": "3c94566c-ed91-4818-ac6d-1afa67e3ff6b",
+                                "mark" : "4"
+                            },
+                            {
+                                "label": "test",
+                                "abbrev": "t",
+                                "id": "0fbb0b58-5821-407e-a332-53f94892a7b6",
+                                "mark" : "5"
+                            },
+                            {
+                                "label": "key (final)",
+                                "abbrev": "kf",
+                                "id": "ca48e356-d711-4c6c-80ef-f28d025f9099",
+                                "mark" : "6"
+                            },
+                            {
+                                "label": "Hook",
+                                "abbrev": "H",
+                                "id": "079bbb78-b5f4-4b36-8864-08713b2d0c0e",
+                                "mark" : "7"
+                            },
+                            {
+                                "label": "lock (final)",
+                                "abbrev": "lf",
+                                "id": "ac974ac6-d1de-4061-b2f4-6e8316116b70",
+                                "mark" : "8"
+                            },
+                            {
+                                "label": "Boss (level)",
+                                "abbrev": "bl",
+                                "id": "715a97c4-1fd9-4d7f-9885-36de55235d87",
+                                "mark" : "9"
+                            },
+                            {
+                                "label": "goal",
+                                "abbrev": "g",
+                                "id": "a4eb9039-0a57-413f-95ff-dbf126e157b1",
+                                "mark" : "2"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "0f3eb50e-dbe4-45ee-aa37-d786ef1b489d",
+                                "to": "04a2ca9d-e9bf-425e-bf0c-40ff87bfb7c0",
+                                "id": "50376c1f-eda8-4cd8-948b-d3af43ae037d"
+                            },
+                            {
+                                "from": "0f3eb50e-dbe4-45ee-aa37-d786ef1b489d",
+                                "to": "3c94566c-ed91-4818-ac6d-1afa67e3ff6b",
+                                "id": "658fde3e-47de-4ae9-859a-90fa8132d13e"
+                            },
+                            {
+                                "from": "0f3eb50e-dbe4-45ee-aa37-d786ef1b489d",
+                                "to": "0fbb0b58-5821-407e-a332-53f94892a7b6",
+                                "id": "a0842753-31c4-4b1c-a686-d685fec4f66b"
+                            },
+                            {
+                                "from": "0fbb0b58-5821-407e-a332-53f94892a7b6",
+                                "to": "ca48e356-d711-4c6c-80ef-f28d025f9099",
+                                "id": "b7dfed7f-1e66-49c2-b009-4d6d56f45e12"
+                            },
+                            {
+                                "from": "0fbb0b58-5821-407e-a332-53f94892a7b6",
+                                "to": "079bbb78-b5f4-4b36-8864-08713b2d0c0e",
+                                "id": "07c25fec-3457-4243-8f4a-78685accd6ce"
+                            },
+                            {
+                                "from": "ca48e356-d711-4c6c-80ef-f28d025f9099",
+                                "to": "ac974ac6-d1de-4061-b2f4-6e8316116b70",
+                                "id": "515629f7-5f27-47d4-972b-305818815130"
+                            },
+                            {
+                                "from": "3c94566c-ed91-4818-ac6d-1afa67e3ff6b",
+                                "to": "ac974ac6-d1de-4061-b2f4-6e8316116b70",
+                                "id": "5fc50189-0530-4d03-80f2-29a316b0e4c2"
+                            },
+                            {
+                                "from": "ac974ac6-d1de-4061-b2f4-6e8316116b70",
+                                "to": "715a97c4-1fd9-4d7f-9885-36de55235d87",
+                                "id": "9499ccb7-001a-4504-99c0-072989f91d84"
+                            },
+                            {
+                                "from": "715a97c4-1fd9-4d7f-9885-36de55235d87",
+                                "to": "a4eb9039-0a57-413f-95ff-dbf126e157b1",
+                                "id": "10ce94bc-7279-4d32-b9ee-79be5a8bc94f"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Linear 1",
+            "lhs": {
+                "nodes": [
+                    {
+                        "label": "Chain (Linear)",
+                        "abbrev": "CL",
+                        "id": "417c1712-fc99-4b9b-be49-1bd23bd2ab64",
+                        "mark" : "1"
+                    }
+                ],
+                "edges": []
+            },
+            "rhs": [
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "test",
+                                "abbrev": "t",
+                                "id": "97ac788e-1766-42d5-80cb-8a0d69d4ea62",
+                                "mark" : "1"
+                            }
+                        ],
+                        "edges": []
+                    }
+                },
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "test",
+                                "abbrev": "t",
+                                "id": "5a512d1e-2369-4ce7-83b8-6fc1795744a7",
+                                "mark": "1"
+                            },
+                            {
+                                "label": "test",
+                                "abbrev": "t",
+                                "id": "fabb4099-4c29-4622-99f5-1b18dd754a74",
+                                "mark": "2"
+                            },
+                            {
+                                "label": "item (bonus)",
+                                "abbrev": "ib",
+                                "id": "9286ba4f-1afc-4b9f-a714-5eae319d4d0a",
+                                "mark": "3"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "5a512d1e-2369-4ce7-83b8-6fc1795744a7",
+                                "to": "fabb4099-4c29-4622-99f5-1b18dd754a74",
+                                "id": "49b321f3-0d99-4dda-a6c3-e3129b450927"
+                            },
+                            {
+                                "from": "fabb4099-4c29-4622-99f5-1b18dd754a74",
+                                "to": "9286ba4f-1afc-4b9f-a714-5eae319d4d0a",
+                                "id": "957816d3-26a9-4dbf-9b55-f7fd64bf4eda"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "test (secret)",
+                                "abbrev": "ts",
+                                "id": "e0e45348-9573-48b7-af29-2e2ebd9424a9",
+                                "mark": "1"
+                            }
+                        ],
+                        "edges": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Linear 2",
+            "lhs": {
+                "nodes": [
+                    {
+                        "label": "Chain (Linear)",
+                        "abbrev": "CL",
+                        "id": "167f720f-cc59-46f8-889b-1c85bab55b26",
+                        "mark": "1"
+                    },
+                    {
+                        "label": "Chain (Linear)",
+                        "abbrev": "CL",
+                        "id": "6b77b782-8082-42f9-b88d-162e62f19e4e",
+                        "mark": "2"
+                    }
+                ],
+                "edges": [
+                    {
+                        "from": "167f720f-cc59-46f8-889b-1c85bab55b26",
+                        "to": "6b77b782-8082-42f9-b88d-162e62f19e4e",
+                        "id": "b15d0b41-6157-4bbc-a7b0-d591b619cbe7"
+                    }
+                ]
+            },
+            "rhs": [
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "key",
+                                "abbrev": "k",
+                                "id": "ae597a67-061b-4c9b-ae5e-67b92acebb2e",
+                                "mark": "1"
+                            },
+                            {
+                                "label": "lock",
+                                "abbrev": "l",
+                                "id": "48f71815-d55a-41fb-9b6d-0b3f10968ea2",
+                                "mark": "2"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "ae597a67-061b-4c9b-ae5e-67b92acebb2e",
+                                "to": "48f71815-d55a-41fb-9b6d-0b3f10968ea2",
+                                "id": "53595635-47eb-4bb9-bfc7-c79beaeb238d"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "key",
+                                "abbrev": "k",
+                                "id": "ea9120cc-e51c-424c-8c9a-82434357d12c",
+                                "mark": "1"
+                            },
+                            {
+                                "label": "lock",
+                                "abbrev": "l",
+                                "id": "8382f58f-121a-4b9a-8c18-cab5e36864a3",
+                                "mark": "3"
+                            },
+                            {
+                                "label": "Chain (Linear)",
+                                "abbrev": "CL",
+                                "id": "0d4b22be-00ed-424c-8a04-6a0cf250e7fd",
+                                "mark": "2"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "ea9120cc-e51c-424c-8c9a-82434357d12c",
+                                "to": "8382f58f-121a-4b9a-8c18-cab5e36864a3",
+                                "id": "15e8c988-ae53-4224-bebf-5609129a16e3"
+                            },
+                            {
+                                "from": "8382f58f-121a-4b9a-8c18-cab5e36864a3",
+                                "to": "0d4b22be-00ed-424c-8a04-6a0cf250e7fd",
+                                "id": "50144caa-ca61-4707-a369-0a66be8192e6"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Resolve Hooks",
+            "lhs": {
+                "nodes": [
+                    {
+                        "label": "Hook",
+                        "abbrev": "H",
+                        "id": "8a44efbf-364a-4f7e-8e36-ebe2abecb490",
+                        "mark": "1"
+                    }
+                ],
+                "edges": []
+            },
+            "rhs": [
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "nothing/exploration",
+                                "abbrev": "n",
+                                "id": "74a2f302-7ca1-4378-a3b2-a3475e771993",
+                                "mark": "1"
+                            }
+                        ],
+                        "edges": []
+                    }
+                },
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "test",
+                                "abbrev": "t",
+                                "id": "cb48ea3e-45f6-407d-9a81-dc863d16300d",
+                                "mark": "1"
+                            },
+                            {
+                                "label": "item (bonus)",
+                                "abbrev": "ib",
+                                "id": "88aadf18-d877-40e4-a728-a829e15a02a3",
+                                "mark": "2"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "cb48ea3e-45f6-407d-9a81-dc863d16300d",
+                                "to": "88aadf18-d877-40e4-a728-a829e15a02a3",
+                                "id": "a14c88d0-6e49-407f-bf00-a9849d6d04ad"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "probability": 1,
+                    "graph": {
+                        "nodes": [
+                            {
+                                "label": "test (secret)",
+                                "abbrev": "ts",
+                                "id": "1375ab3c-6ab6-4366-a1c6-19a270627787",
+                                "mark": "1"
+                            },
+                            {
+                                "label": "item (bonus)",
+                                "abbrev": "ib",
+                                "id": "e0509f66-d5a3-441e-b2f5-09ee06761d67",
+                                "mark": "2"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "from": "1375ab3c-6ab6-4366-a1c6-19a270627787",
+                                "to": "e0509f66-d5a3-441e-b2f5-09ee06761d67",
+                                "id": "691b557a-b754-46ca-bf3f-438a911c4670"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "preference_funcs": [],
+    "name": "Dormans",
+    "alphabet_id": "60bb831a5615e67c688a2445",
+    "axiom": {
+        "nodes": [
+            {
+                "label": "Start",
+                "abbrev": "S",
+                "id": "b3c342d1-848c-467c-b685-0b96d9ccfe2d",
+                "mark": "1"
+            }
+        ],
+        "edges": []
+    },
+    "__v": 316
+}
